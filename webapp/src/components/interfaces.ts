@@ -8,12 +8,12 @@ export interface Order {
 }
 
 export interface OrderData {
-  Queued: Order[],
-  InProgress: Order[],
-  QA: Order[],
+    Queued: Order[],
+    InProgress: Order[],
+    QA: Order[],
 }
 
-export interface DraggableItemProps extends Order{
+export interface DraggableItemProps extends Order {
     draggableProvided: DraggableProvided;
     removeOrder: (order: Order) => void;
 }
@@ -32,4 +32,14 @@ export interface HeaderLink {
 
 export interface HeaderProps {
     links: HeaderLink[];
+}
+
+export interface Product {
+    ProductID: number;
+    ProductName: string;
+    ProductPhotoURL: string;
+}
+
+export interface ProductData {
+    Products: Product[],
 }
