@@ -7,15 +7,22 @@ const ProductItem = ({
   ProductPhotoURL
 }: Product) => (
   <div
-    className='bg-neutral-300 flex items-center justify-between mt-1 p-3 rounded w-full flex items-center justify-center'
+    className='bg-neutral-300 flex items-center justify-between mt-1 p-3 rounded w-full flex items-center justify-center shadow-lg'
     data-testid={`productItem-${ProductID}`}
   >
     {(() => {
       return (
         <div
-          className='w-full'
+          className='flex flex-col h-[200px] w-[200px] justify-between'
         >
-          <img src={ProductPhotoURL} width="100%" />
+          <div
+            className='flex flex-col w-full h-[150px] justify-center'
+          >
+            <img
+              src={ProductPhotoURL}
+              className="h-[100%] w-auto mix-blend-multiply"
+            />
+          </div>
           <div className="text-center">{ProductName}</div>
         </div>
       );
