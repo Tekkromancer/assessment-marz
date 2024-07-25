@@ -92,7 +92,7 @@ CREATE TABLE `Product` (
 
 LOCK TABLES `Product` WRITE;
 /*!40000 ALTER TABLE `Product` DISABLE KEYS */;
-INSERT INTO `Product` VALUES (1,'Hat','t','Active'),(2,'Shoes','t','Active'),(3,'Pants','t','Active'),(4,'Shirt','t','InActive'),(5,'Coat','t','InActive');
+INSERT INTO `Product` VALUES (1,'Hat','https://m.media-amazon.com/images/I/81WgMcwuyUL._AC_UY350_.jpg','Active'),(2,'Shoes','https://litb-cgis.rightinthebox.com/images/640x640/202212/bps/product/inc/hqakbi1670911937545.jpg','Active'),(3,'Pants','https://i5.walmartimages.com/seo/Mens-Medieval-Capri-Pants-Vintage-Banded-Pirate-Pants-Navigator-Renaissance-Costume-Elastic-Waist-Below-Knee-Shorts_170ab53f-8ce4-46da-8ce1-ffddd7ea6b80.bf28bf094c9b41829f5e5e124b9d00cc.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF','Active'),(4,'Shirt','https://cdn.shopify.com/s/files/1/0051/2455/4841/products/1336-Black1.jpg','InActive'),(5,'Coat','https://redmooncurios.com/cdn/shop/products/BlackBrocadeLongPirateCoat1_grande.jpg','InActive');
 /*!40000 ALTER TABLE `Product` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
